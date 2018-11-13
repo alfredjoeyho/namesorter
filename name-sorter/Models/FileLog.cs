@@ -7,7 +7,7 @@ namespace name_sorter.Models
     {
         public void Log(string msgToPrint)
         {
-            File.AppendText(@"C:\Log.txt").Write(msgToPrint);
+            File.AppendText("./Log.txt").Write(msgToPrint);
         }
     }
 }

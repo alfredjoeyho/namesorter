@@ -8,13 +8,13 @@ namespace name_sorter.Models
     {
         public void WriteName(List<Name> sortedList)
         {
-            string path = @"C:\NameSorter\sorted-names-list.txt";
+            string path = "./sorted-names-list.txt";
             if (!File.Exists(path))
             {
                 File.Create(path);
             }
 
-            using (TextWriter tw = new StreamWriter(@"C:\N\sorted-names-list.txt"))
+            using (TextWriter tw = new StreamWriter("./sorted-names-list.txt"))
             {
                 foreach (Name name in sortedList)
                     tw.WriteLine(name.FirstName + " " + name.LastName);
