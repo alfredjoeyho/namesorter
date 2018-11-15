@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.runner.visualstudio.2.4.1\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.4.1\build\net20\xunit.runner.visualstudio.props')" />
   <Import Project="..\packages\xunit.runner.console.2.4.1\build\xunit.runner.console.props" Condition="Exists('..\packages\xunit.runner.console.2.4.1\build\xunit.runner.console.props')" />
   <Import Project="..\packages\xunit.core.2.4.1\build\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.4.1\build\xunit.core.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -84,6 +85,12 @@
     <Compile Include="Models\Readline.cs" />
     <Compile Include="Models\SortName.cs" />
     <Compile Include="Models\WriteNameToFile.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTest\IGetFileNameTest.cs" />
@@ -94,10 +101,73 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\name-sorter.exe.config" />
+    <None Include="bin\Release\name-sorter.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\name-sorter.csproj.CopyComplete" />
+    <None Include="obj\Debug\name-sorter.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\name-sorter.csprojAssemblyReference.cache" />
+    <None Include="obj\Release\name-sorter.csproj.CopyComplete" />
+    <None Include="obj\Release\name-sorter.csproj.CoreCompileInputs.cache" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Castle.Core.dll" />
+    <Content Include="bin\Debug\Castle.Core.xml" />
+    <Content Include="bin\Debug\Moq.dll" />
+    <Content Include="bin\Debug\Moq.pdb" />
+    <Content Include="bin\Debug\Moq.xml" />
+    <Content Include="bin\Debug\name-sorter.exe" />
+    <Content Include="bin\Debug\name-sorter.pdb" />
+    <Content Include="bin\Debug\sorted-names-list.txt" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="bin\Debug\System.ValueTuple.dll" />
+    <Content Include="bin\Debug\System.ValueTuple.xml" />
+    <Content Include="bin\Debug\unsorted-names-list.txt" />
+    <Content Include="bin\Debug\xunit.abstractions.dll" />
+    <Content Include="bin\Debug\xunit.assert.dll" />
+    <Content Include="bin\Debug\xunit.assert.xml" />
+    <Content Include="bin\Debug\xunit.core.dll" />
+    <Content Include="bin\Debug\xunit.core.xml" />
+    <Content Include="bin\Debug\xunit.execution.desktop.dll" />
+    <Content Include="bin\Debug\xunit.execution.desktop.xml" />
+    <Content Include="bin\Debug\xunit.runner.reporters.net452.dll" />
+    <Content Include="bin\Debug\xunit.runner.utility.net452.dll" />
+    <Content Include="bin\Debug\xunit.runner.visualstudio.testadapter.dll" />
+    <Content Include="bin\Release\Castle.Core.dll" />
+    <Content Include="bin\Release\Castle.Core.xml" />
+    <Content Include="bin\Release\Moq.dll" />
+    <Content Include="bin\Release\Moq.pdb" />
+    <Content Include="bin\Release\Moq.xml" />
+    <Content Include="bin\Release\name-sorter.exe" />
+    <Content Include="bin\Release\name-sorter.pdb" />
+    <Content Include="bin\Release\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\Release\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="bin\Release\System.ValueTuple.dll" />
+    <Content Include="bin\Release\System.ValueTuple.xml" />
+    <Content Include="bin\Release\unsorted-names-list.txt" />
+    <Content Include="bin\Release\xunit.abstractions.dll" />
+    <Content Include="bin\Release\xunit.abstractions.xml" />
+    <Content Include="bin\Release\xunit.assert.dll" />
+    <Content Include="bin\Release\xunit.assert.xml" />
+    <Content Include="bin\Release\xunit.core.dll" />
+    <Content Include="bin\Release\xunit.core.xml" />
+    <Content Include="bin\Release\xunit.execution.desktop.dll" />
+    <Content Include="bin\Release\xunit.execution.desktop.xml" />
+    <Content Include="obj\Debug\name-sorter.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\name-sorter.exe" />
+    <Content Include="obj\Debug\name-sorter.pdb" />
+    <Content Include="obj\Release\name-sorter.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\name-sorter.exe" />
+    <Content Include="obj\Release\name-sorter.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -107,6 +177,7 @@
     <Error Condition="!Exists('..\packages\xunit.core.2.4.1\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.4.1\build\xunit.core.props'))" />
     <Error Condition="!Exists('..\packages\xunit.core.2.4.1\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.4.1\build\xunit.core.targets'))" />
     <Error Condition="!Exists('..\packages\xunit.runner.console.2.4.1\build\xunit.runner.console.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.console.2.4.1\build\xunit.runner.console.props'))" />
+    <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.4.1\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.4.1\build\net20\xunit.runner.visualstudio.props'))" />
   </Target>
   <Import Project="..\packages\xunit.core.2.4.1\build\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.4.1\build\xunit.core.targets')" />
 </Project>

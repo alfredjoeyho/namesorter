@@ -3,7 +3,7 @@ using name_sorter.Models;
 
 namespace name_sorter.Interfaces
 {
-    interface IReadLine
+    public interface IReadLine
     {
         List<Name> ReadLine(string fileName);
     }

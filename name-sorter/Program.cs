@@ -33,7 +33,7 @@ namespace NameSorter
 
                     IPrintName printName = new PrintName();
                     printName.PrintNameToScreen(sortedNameList);
-           
+
                     IWriteNameToFile writeNameToFile = new WriteNameToFile();
                     writeNameToFile.WriteName(sortedNameList);
 
@@ -44,6 +44,8 @@ namespace NameSorter
             {
                 Console.WriteLine("The file could not be read:");
                 Console.WriteLine(ex.Message);
+                ILog log = new FileLog();
+                log.Log("The file could not be read:" + ex);
             }
         }
     }

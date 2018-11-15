@@ -27,7 +27,7 @@ namespace name_sorter.UnitTest
             testList.Add(name2);
 
             var printname = new Mock<IWriteNameToFile>();
-            printname.Setup(x => x.WriteName(testList));
+            var sortedNameList = printname.Setup(x => x.WriteName(testList));
             Assert.Equal(testList, testList);
         }
     }

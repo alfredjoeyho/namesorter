@@ -1,4 +1,5 @@
 ﻿using name_sorter.Interfaces;
+using System;
 using System.IO;
 
 namespace name_sorter.Models
@@ -7,7 +8,14 @@ namespace name_sorter.Models
     {
         public void Log(string msgToPrint)
         {
-            File.AppendText("./Log.txt").Write(msgToPrint);
+            try
+            {
+                File.AppendText("./Log.txt").Write(msgToPrint);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
